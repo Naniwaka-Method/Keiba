@@ -226,7 +226,7 @@ public class ScrapeService {
 	}
 	
 	
-	
+	//分→秒へ
 	private double timeToSeconds(String timeStr) {
         // 分と秒に分割
         String[] parts = timeStr.split(":");
