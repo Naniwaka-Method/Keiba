@@ -142,7 +142,8 @@ public class ScrapeService {
 		
 		//指定した着順の競走馬データを取得
 		KeibaEntity entity = raceList.get(arrival-1);
-		//通過順をハイフンでスプリット
+		
+		//通過順をハイフンでスプリットし配列に格納
 		String[] passingOrderSp = entity.getPassingOrder().split("-");
 		
 		//現在のレースリストからn着馬のデータを除去する
@@ -155,7 +156,7 @@ public class ScrapeService {
 		for(int i=0; i<４; i++) {
 			KeibaEntity highEntity = raceList.get(i);
 			
-			//通過順をハイフンでスプリット
+			//通過順をハイフンでスプリットし配列に格納
 			String[] highPassingOrderSp = highEntity.getPassingOrder().split("-");
 			
 			int lastIndex = highPassingOrderSp.length - 1;
