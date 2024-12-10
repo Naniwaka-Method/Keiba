@@ -100,6 +100,7 @@ public class ScrapeService {
 		return allList;
 	}
 	
+	//文字列配列からEntityクラスに格納
 	private KeibaEntity setEntity(String[] array) {
 		KeibaEntity entity = new KeibaEntity();
 		
